@@ -9,6 +9,14 @@ int main(void)
 {
     int ordered_list[ARRAY_LENGTH] = {0,2,4,6,8,10,12,14,17,19,30};
 
+    // Print out ordered list
+    for (int i = 0; i < ARRAY_LENGTH; i++)
+    {
+        printf ("%i, ", ordered_list[i]);
+    }
+    printf ("\n");
+    
+
     int number_to_find = get_int("Number: ");    
 
     int index = binary_search(ordered_list, 0, ARRAY_LENGTH - 1, number_to_find);
