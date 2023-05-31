@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #define ARRAY_LENGTH 11
+#define ERROR -1
 
 int binary_search(int sorted_array[], int start_index, int end_index, int find_number);
 
@@ -15,7 +16,7 @@ int main(void)
         printf ("%i, ", ordered_list[i]);
     }
     printf ("\n");
-    
+
 
     int number_to_find = get_int("Number: ");    
 
@@ -32,7 +33,7 @@ int binary_search(int sorted_array[], int start_index, int end_index, int find_n
     // Define base-case / exit condition
     if (start_index > end_index)
     {
-        return mid;
+        return ERROR;
     }
 
     if (find_number == sorted_array[mid])
