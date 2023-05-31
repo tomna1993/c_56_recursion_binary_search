@@ -16,6 +16,7 @@ int main(void)
     printf ("Found, index: %i\n", index);
 }
 
+// Find number with binary search algorithm
 int binary_search(int sorted_array[], int start_index, int end_index, int find_number)
 {
     int mid = (start_index + end_index) / 2;
