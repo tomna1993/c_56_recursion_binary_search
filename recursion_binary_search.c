@@ -22,7 +22,14 @@ int main(void)
 
     int index = binary_search(ordered_list, 0, ARRAY_LENGTH - 1, number_to_find);
 
-    printf ("Found, index: %i\n", index);
+    if (index != ERROR)
+    {
+        printf ("Found, index: %i\n", index);
+        return 0;
+    }
+    
+    printf ("Not found!\n");
+    return 1;
 }
 
 // Find number with binary search algorithm
