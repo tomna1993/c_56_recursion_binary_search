@@ -14,4 +14,4 @@ Recursion means "defining a problem in terms of itself". This can be a very powe
 
 [Recursion](https://www.geeksforgeeks.org/introduction-to-recursion-data-structure-and-algorithm-tutorials/)
 
-This program uses a recursive function to find a number in a given array by binary search.
+This program uses a recursive function to find a number in a given array with binary search algorithm.
